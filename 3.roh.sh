@@ -9,7 +9,7 @@ output="Analysis/roh"
 ## read data
 echo "processing file ${prj_folder}/${input_file}"
 ## --ibc not usable --> only one dog !!
-$plink --dog --file "${prj_folder}/${input_file}" --homozyg  --homozyg-het 1 --out $output
+$plink --dog --file "${prj_folder}/${input_file}" --homozyg  --homozyg-het 2 --homozyg-snp 25 --homozyg-kb 100 --homozyg-density 100 --homozyg-gap 500 --out $output
 
 echo "DONE!"
 

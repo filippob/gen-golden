@@ -10,6 +10,7 @@ output="Analysis/inbreeding"
 echo "processing file ${prj_folder}/${input_file}"
 ## --ibc not usable --> only one dog !!
 $plink --dog --file "${prj_folder}/${input_file}" --het small-sample --out $output
+$plink --dog --file "${prj_folder}/${input_file}" --recode A --out Analysis/geno_filtered ## matrix format
 
 echo "DONE!"
 
